@@ -35,7 +35,7 @@
                             data-mdb-ripple="true" data-mdb-ripple-color="info">Produk Saya</a>
                     </li>
                     <li class="relative">
-                        <a href="{{ url('/user/product/tambah') }}"
+                        <a href="{{ url('/product/create') }}"
                             class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out"
                             data-mdb-ripple="true" data-mdb-ripple-color="info">Tambah Produk Baru</a>
                     </li>

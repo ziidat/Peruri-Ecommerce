@@ -29,3 +29,4 @@ Route::get('/chat', [ChatController::class, 'index'])->middleware(['auth'])->nam
 Route::get('messages', [ChatController::class, 'fetchMessages']);
 Route::post('messages', [ChatController::class, 'sendMessage']);
 Route::get('/user', [UserController::class, 'index'])->middleware(['auth'])->name('user');
+Route::resource('product', ProductController::class);
