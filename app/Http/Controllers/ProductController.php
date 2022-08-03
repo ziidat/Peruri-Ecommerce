@@ -13,7 +13,10 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        $product = product::all();
+
+        return view('product',['product'=> $product]);
+
     }
 
     /**
@@ -34,7 +37,14 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        product::create([
+            'nama' => $request->nama,
+            'detail' => $request->detail,
+            'stock' => $request->price,
+            'image' => $request->harga,       
+        ]);
+        session()->flash('success', 'Data lab Berhasil di simpan');
+        return view('tambah-lab');
     }
 
     /**
