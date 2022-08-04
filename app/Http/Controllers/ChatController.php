@@ -23,7 +23,7 @@ class ChatController extends Controller
      */
     public function index()
     {
-        return view('chat');
+        return view('/user/chat');
     }
 /**
      * Fetch all messages

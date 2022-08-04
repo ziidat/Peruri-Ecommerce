@@ -23,10 +23,15 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
+Route::get('/user/diskusi', function () {
+    return view('user.diskusi');
+})->name('diskusi');
+
 require __DIR__.'/auth.php';
 
 Route::get('/chat', [ChatController::class, 'index'])->middleware(['auth'])->name('chat');
 Route::get('messages', [ChatController::class, 'fetchMessages']);
 Route::post('messages', [ChatController::class, 'sendMessage']);
 Route::get('/user', [UserController::class, 'index'])->middleware(['auth'])->name('user');
+Route::get('/user/wishlist', [UserController::class, 'wishlist'])->middleware(['auth'])->name('wishlist');
 Route::resource('product', ProductController::class);

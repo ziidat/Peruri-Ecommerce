@@ -1,6 +1,9 @@
-@extends('layouts.app')
-
-@section('content')
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('Diskusi') }}
+        </h2>
+    </x-slot>
     <div class="flex justify-center mx-20 mt-10">
         @include('layouts.sidebar.user-menu')
         <div class="block p-6 rounded-lg shadow-lg bg-white ml-10 min-w-min w-full space-y-2">
@@ -93,4 +96,4 @@
             {{-- End Session Diskusi Product 2 --}}
         </div>
     </div>
-@endsection
+</x-app-layout>

@@ -13,9 +13,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $product = product::all();
+        // $product = product::all();
 
-        return view('product',['product'=> $product]);
+        return view('/user/product');
 
     }
 
@@ -40,7 +40,7 @@ class ProductController extends Controller
         product::create([
             'nama' => $request->nama,
             'detail' => $request->detail,
-            'stock' => $request->price,
+            'stock' => $request->stock,
             'image' => $request->harga,       
         ]);
         session()->flash('success', 'Data lab Berhasil di simpan');

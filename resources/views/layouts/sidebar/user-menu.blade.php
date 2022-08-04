@@ -30,7 +30,7 @@
                 <ul class="relative accordion-collapse collapse show" id="collapsekotakMasuk"
                     aria-labelledby="kotakMasuk" data-bs-parent="#sidenavExample">
                     <li class="relative">
-                        <a href="{{ url('/user/product') }}"
+                        <a href="{{ url('product') }}"
                             class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out"
                             data-mdb-ripple="true" data-mdb-ripple-color="info">Produk Saya</a>
                     </li>
@@ -40,7 +40,7 @@
                             data-mdb-ripple="true" data-mdb-ripple-color="info">Tambah Produk Baru</a>
                     </li>
                     <li class="relative">
-                        <a href="{{ url('/user/chat') }}"
+                        <a href="{{ url('chat') }}"
                             class="flex items-center active:bg-gray-500 text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out"
                             data-mdb-ripple="true" data-mdb-ripple-color="info">Chat</a>
                     </li>

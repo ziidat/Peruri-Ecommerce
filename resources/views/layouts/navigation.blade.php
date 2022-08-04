@@ -16,17 +16,17 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                {{-- <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('chat')" :active="request()->routeIs('chat')">
                         {{ __('Chat') }}
                     </x-nav-link>
-                </div>
+                </div> --}}
             </div>
 
             {{-- Menu Nav --}}
             <div class="p-2 ml-1 my-auto">
                 <div class="flex justify-right space-x-3">
-                    <a href="{{ url('user/chat') }}" class="my-auto transition ease-in-out text-gray-500 hover:text-slate-800">
+                    <a href="{{ url('chat') }}" class="my-auto transition ease-in-out text-gray-500 hover:text-slate-800">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                           </svg>
