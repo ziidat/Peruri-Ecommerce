@@ -35,3 +35,5 @@ Route::post('messages', [ChatController::class, 'sendMessage']);
 Route::get('/user', [UserController::class, 'index'])->middleware(['auth'])->name('user');
 Route::get('/user/wishlist', [UserController::class, 'wishlist'])->middleware(['auth'])->name('wishlist');
 Route::resource('product', ProductController::class);
+
+Route::view('/test', 'product.product-detail');
